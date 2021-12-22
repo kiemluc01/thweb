@@ -1,0 +1,51 @@
+li.menu_bar {
+    list-style-type: none;
+    line-height: 50px;
+    background-image: linear-gradient(rgb(83, 65, 243), rgb(29, 154, 163));
+}
+
+ul.container_menu,
+ul.container_menu>li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    font-family: roboto;
+    color: #FFF;
+}
+
+ul>li>a>img {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px/75px;
+}
+
+ul.menu_bar_con {
+    display: none;
+}
+
+li.menu_bar:hover>ul.menu_bar_con {
+    display: block;
+}
+
+div#menu {
+    background-color: rgb(59, 146, 245);
+    width: 20%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+div.menu_container {
+    display: flex;
+    height: 650px;
+}
+
+div#banner {
+    display: flex;
+}

@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Quản Lí Tài Chính Cá Nhân</title>
 
     <link rel="icon" href="Public/images/logo_tabbar.png" type="image/x-icon">
+    <link rel="stylesheet" href="Public/css/menu.css">
+    <link rel="stylesheet" href="Public/css/animate.css">
 
 </head>
 
 <body>
-    <!-- load menu -->
-    <?php loadModule('menu'); ?>
+
     <script>
         window.onscroll = function() {
             myFunction()
@@ -33,7 +34,7 @@
     <!-- load component -->
     <?php loadComponent();    ?>
 
-    <?php loadModule('footer');     ?>
+
 </body>
 
 </html>

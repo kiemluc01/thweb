@@ -1,0 +1,694 @@
+ div#banner {
+     width: 80%;
+     height: 650px;
+     background-image: url('../images/background.jpg');
+     position: relative;
+ }
+ 
+ div#logo {
+     display: flex;
+ }
+ /* đồng xu */
+ 
+ @keyframes coin {
+     0% {
+         background-color: rgb(172, 241, 42);
+         left: 0%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     2% {
+         background-color: rgb(172, 241, 42);
+         left: 1%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     4% {
+         background-color: rgb(172, 241, 42);
+         left: 2%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     6% {
+         background-color: rgb(172, 241, 42);
+         left: 3%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     8% {
+         background-color: rgb(172, 241, 42);
+         left: 4%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     10% {
+         background-color: rgb(172, 241, 42);
+         left: 5%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     12% {
+         background-color: rgb(172, 241, 42);
+         left: 6%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     14% {
+         background-color: rgb(172, 241, 42);
+         left: 7%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     16% {
+         background-color: rgb(172, 241, 42);
+         left: 8%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     18% {
+         background-color: rgb(172, 241, 42);
+         left: 9%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     20% {
+         background-color: rgb(172, 241, 42);
+         left: 10%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     22% {
+         background-color: rgb(172, 241, 42);
+         left: 11%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     24% {
+         background-color: rgb(172, 241, 42);
+         left: 12%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     26% {
+         background-color: rgb(172, 241, 42);
+         left: 12.2%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     28% {
+         background-color: rgb(172, 241, 42);
+         left: 12.4%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     30% {
+         background-color: rgb(172, 241, 42);
+         left: 12.6%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     32% {
+         background-color: rgb(172, 241, 42);
+         left: 12.8%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     34% {
+         background-color: rgb(172, 241, 42);
+         left: 13%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     36% {
+         background-color: rgb(172, 241, 42);
+         left: 13.5%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     100% {
+         background-image: url('../images/xu.png');
+         left: 20%;
+         top: 25%;
+         width: 197px;
+         height: 216px;
+     }
+ }
+ 
+ div#coin {
+     position: relative;
+     animation-name: coin;
+     animation-duration: 3s;
+     animation-iteration-count: 3;
+     animation-fill-mode: forwards;
+ }
+ /* logo L */
+ 
+ @keyframes L {
+     0% {
+         background-color: rgb(27, 92, 21);
+         left: 0%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     2% {
+         background-color: rgb(27, 92, 21);
+         left: 2%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     4% {
+         background-color: rgb(27, 92, 21);
+         left: 4%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     6% {
+         background-color: rgb(27, 92, 21);
+         left: 6%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     8% {
+         background-color: rgb(27, 92, 21);
+         left: 8%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     10% {
+         background-color: rgb(27, 92, 21);
+         left: 10%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     12% {
+         background-color: rgb(27, 92, 21);
+         left: 12%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     14% {
+         background-color: rgb(27, 92, 21);
+         left: 14%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     16% {
+         background-color: rgb(27, 92, 21);
+         left: 16%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     18% {
+         background-color: rgb(27, 92, 21);
+         left: 18%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     20% {
+         background-color: rgb(27, 92, 21);
+         left: 20%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     22% {
+         background-color: rgb(27, 92, 21);
+         left: 22%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     24% {
+         background-color: rgb(27, 92, 21);
+         left: 24%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     26% {
+         background-color: rgb(27, 92, 21);
+         left: 24.3%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     28% {
+         background-color: rgb(27, 92, 21);
+         left: 24.6%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     30% {
+         background-color: rgb(27, 92, 21);
+         left: 24.9%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     32% {
+         background-color: rgb(27, 92, 21);
+         left: 25.2%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     34% {
+         background-color: rgb(27, 92, 21);
+         left: 25.5%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     36% {
+         background-color: rgb(27, 92, 21);
+         left: 25.8%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     100% {
+         background-image: url('../images/L.png');
+         left: 22%;
+         top: 33%;
+         width: 173px;
+         height: 155px;
+     }
+ }
+ 
+ div#L {
+     position: relative;
+     animation-name: L;
+     animation-duration: 3s;
+     animation-iteration-count: 3;
+     animation-fill-mode: forwards;
+ }
+ /* logo T */
+ 
+ @keyframes T {
+     0% {
+         background-color: rgb(27, 92, 21);
+         left: 0%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     2% {
+         background-color: rgb(27, 92, 21);
+         left: 3%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     4% {
+         background-color: rgb(27, 92, 21);
+         left: 5%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     6% {
+         background-color: rgb(27, 92, 21);
+         left: 7%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     8% {
+         background-color: rgb(27, 92, 21);
+         left: 10%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     10% {
+         background-color: rgb(27, 92, 21);
+         left: 13%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     12% {
+         background-color: rgb(27, 92, 21);
+         left: 15%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     14% {
+         background-color: rgb(27, 92, 21);
+         left: 17%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     16% {
+         background-color: rgb(27, 92, 21);
+         left: 20%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     18% {
+         background-color: rgb(27, 92, 21);
+         left: 22%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     20% {
+         background-color: rgb(27, 92, 21);
+         left: 24%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     22% {
+         background-color: rgb(27, 92, 21);
+         left: 27%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     24% {
+         background-color: rgb(27, 92, 21);
+         left: 28%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     26% {
+         background-color: rgb(27, 92, 21);
+         left: 28.3%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     28% {
+         background-color: rgb(27, 92, 21);
+         left: 28.6%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     30% {
+         background-color: rgb(27, 92, 21);
+         left: 28.9%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     32% {
+         background-color: rgb(27, 92, 21);
+         left: 29.2%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     34% {
+         background-color: rgb(27, 92, 21);
+         left: 29.5%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     36% {
+         background-color: rgb(27, 92, 21);
+         left: 29.8%;
+         top: 50%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     100% {
+         background-image: url('../images/T.png');
+         left: 24%;
+         top: 33%;
+         width: 180px;
+         height: 155px;
+     }
+ }
+ 
+ div#T {
+     animation-name: T;
+     position: relative;
+     animation-duration: 3s;
+     animation-iteration-count: 3;
+     animation-fill-mode: forwards;
+ }
+ /* logo Chu */
+ 
+ @keyframes Chu {
+     0% {
+         background-color: rgb(27, 92, 21);
+         left: 0%;
+         top: 70%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     2% {
+         background-color: rgb(27, 92, 21);
+         left: 3%;
+         top: 70%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     4% {
+         background-color: rgb(27, 92, 21);
+         left: 6%;
+         top: 70%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     6% {
+         background-color: rgb(27, 92, 21);
+         left: 9%;
+         top: 70%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     8% {
+         background-color: rgb(27, 92, 21);
+         left: 12%;
+         top: 70%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     10% {
+         background-color: rgb(27, 92, 21);
+         left: 15%;
+         top: 70%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     12% {
+         background-color: rgb(27, 92, 21);
+         left: 18%;
+         top: 70%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     14% {
+         background-color: rgb(27, 92, 21);
+         left: 21%;
+         top: 70%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     16% {
+         background-color: rgb(27, 92, 21);
+         left: 24%;
+         top: 70%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     18% {
+         background-color: rgb(27, 92, 21);
+         left: 27%;
+         top: 70%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     20% {
+         background-color: rgb(27, 92, 21);
+         left: 30%;
+         top: 70%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     22% {
+         background-color: rgb(27, 92, 21);
+         left: 33%;
+         top: 70%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     24% {
+         background-color: rgb(27, 92, 21);
+         left: 36%;
+         top: 70%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     26% {
+         background-color: rgb(27, 92, 21);
+         left: 39%;
+         top: 70%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     28% {
+         background-color: rgb(27, 92, 21);
+         left: 42%;
+         top: 70%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     30% {
+         background-color: rgb(27, 92, 21);
+         left: 45%;
+         top: 70%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     32% {
+         background-color: rgb(27, 92, 21);
+         left: 47%;
+         top: 70%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     34% {
+         background-color: rgb(27, 92, 21);
+         left: 48%;
+         top: 70%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     36% {
+         background-color: rgb(27, 92, 21);
+         left: 50%;
+         top: 70%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+     }
+     100% {
+         background-image: url('../images/Chu.png');
+         left: 25%;
+         top: 50%;
+         width: 419px;
+         height: 39px;
+     }
+ }
+ 
+ div#Chu {
+     animation-name: Chu;
+     position: relative;
+     animation-duration: 3s;
+     animation-iteration-count: 3;
+     animation-fill-mode: forwards;
+ }
