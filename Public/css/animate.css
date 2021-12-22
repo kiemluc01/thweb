@@ -2,7 +2,7 @@
      width: 80%;
      height: 650px;
      background-image: url('../images/background.jpg');
-     position: relative;
+     display: flex;
  }
  
  div#logo {
@@ -526,7 +526,7 @@
  @keyframes Chu {
      0% {
          background-color: rgb(27, 92, 21);
-         left: 0%;
+         left: 20%;
          top: 70%;
          width: 40px;
          height: 40px;
@@ -534,7 +534,7 @@
      }
      2% {
          background-color: rgb(27, 92, 21);
-         left: 3%;
+         left: 22%;
          top: 70%;
          width: 40px;
          height: 40px;
@@ -542,7 +542,7 @@
      }
      4% {
          background-color: rgb(27, 92, 21);
-         left: 6%;
+         left: 24%;
          top: 70%;
          width: 40px;
          height: 40px;
@@ -550,7 +550,7 @@
      }
      6% {
          background-color: rgb(27, 92, 21);
-         left: 9%;
+         left: 25%;
          top: 70%;
          width: 40px;
          height: 40px;
@@ -558,7 +558,7 @@
      }
      8% {
          background-color: rgb(27, 92, 21);
-         left: 12%;
+         left: 26%;
          top: 70%;
          width: 40px;
          height: 40px;
@@ -566,7 +566,7 @@
      }
      10% {
          background-color: rgb(27, 92, 21);
-         left: 15%;
+         left: 27%;
          top: 70%;
          width: 40px;
          height: 40px;
@@ -574,7 +574,7 @@
      }
      12% {
          background-color: rgb(27, 92, 21);
-         left: 18%;
+         left: 28%;
          top: 70%;
          width: 40px;
          height: 40px;
@@ -582,7 +582,7 @@
      }
      14% {
          background-color: rgb(27, 92, 21);
-         left: 21%;
+         left: 31%;
          top: 70%;
          width: 40px;
          height: 40px;
@@ -590,7 +590,7 @@
      }
      16% {
          background-color: rgb(27, 92, 21);
-         left: 24%;
+         left: 34%;
          top: 70%;
          width: 40px;
          height: 40px;
@@ -598,7 +598,7 @@
      }
      18% {
          background-color: rgb(27, 92, 21);
-         left: 27%;
+         left: 37%;
          top: 70%;
          width: 40px;
          height: 40px;
@@ -606,7 +606,7 @@
      }
      20% {
          background-color: rgb(27, 92, 21);
-         left: 30%;
+         left: 40%;
          top: 70%;
          width: 40px;
          height: 40px;
@@ -614,7 +614,7 @@
      }
      22% {
          background-color: rgb(27, 92, 21);
-         left: 33%;
+         left: 43%;
          top: 70%;
          width: 40px;
          height: 40px;
@@ -622,7 +622,7 @@
      }
      24% {
          background-color: rgb(27, 92, 21);
-         left: 36%;
+         left: 46%;
          top: 70%;
          width: 40px;
          height: 40px;
@@ -630,7 +630,7 @@
      }
      26% {
          background-color: rgb(27, 92, 21);
-         left: 39%;
+         left: 49%;
          top: 70%;
          width: 40px;
          height: 40px;
@@ -638,7 +638,7 @@
      }
      28% {
          background-color: rgb(27, 92, 21);
-         left: 42%;
+         left: 52%;
          top: 70%;
          width: 40px;
          height: 40px;
@@ -646,7 +646,7 @@
      }
      30% {
          background-color: rgb(27, 92, 21);
-         left: 45%;
+         left: 55%;
          top: 70%;
          width: 40px;
          height: 40px;
@@ -654,7 +654,7 @@
      }
      32% {
          background-color: rgb(27, 92, 21);
-         left: 47%;
+         left: 57%;
          top: 70%;
          width: 40px;
          height: 40px;
@@ -662,7 +662,7 @@
      }
      34% {
          background-color: rgb(27, 92, 21);
-         left: 48%;
+         left: 58%;
          top: 70%;
          width: 40px;
          height: 40px;
@@ -670,7 +670,7 @@
      }
      36% {
          background-color: rgb(27, 92, 21);
-         left: 50%;
+         left: 60%;
          top: 70%;
          width: 40px;
          height: 40px;
@@ -678,8 +678,8 @@
      }
      100% {
          background-image: url('../images/Chu.png');
-         left: 25%;
-         top: 50%;
+         left: 45%;
+         top: 70%;
          width: 419px;
          height: 39px;
      }
@@ -687,7 +687,7 @@
  
  div#Chu {
      animation-name: Chu;
-     position: relative;
+     position: fixed;
      animation-duration: 3s;
      animation-iteration-count: 3;
      animation-fill-mode: forwards;

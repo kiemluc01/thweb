@@ -4,8 +4,7 @@ li.menu_bar {
     background-image: linear-gradient(rgb(83, 65, 243), rgb(29, 154, 163));
 }
 
-ul.container_menu,
-ul.container_menu>li {
+ul.container_menu {
     margin: 0;
     padding: 0;
 }
@@ -44,8 +43,4 @@ div#menu {
 div.menu_container {
     display: flex;
     height: 650px;
-}
-
-div#banner {
-    display: flex;
 }

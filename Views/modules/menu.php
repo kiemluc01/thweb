@@ -9,4 +9,5 @@
         </ul>
     </li>
     <li class="menu_bar"><a href="">Ngày đi làm</a></li>
+    <li class="menu_bar"><a href="index.php">Đăng xuất</a></li>
 </ul>
