@@ -44,3 +44,16 @@ div.menu_container {
     display: flex;
     height: 650px;
 }
+
+img#logo_menu {
+    animation: app-logo-spin infinite 10s linear
+}
+
+@keyframes app-logo-spin {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
