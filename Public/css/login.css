@@ -1,0 +1,54 @@
+div#login {
+    background-image: url('../images/background.jpg');
+    height: 650px;
+    width: 60%;
+}
+
+div#login_container {
+    display: flex;
+}
+
+div.banner_left,
+div.banner_right {
+    width: 20%;
+    height: 100%;
+    background-image: linear-gradient(bottom to left, rgb(141, 248, 252), rgb(153, 245, 141), rgb(238, 240, 135));
+}
+
+@font-face {
+    font-family: roboto;
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+th {
+    color: rgb(255, 43, 5);
+    font-size: 50px;
+    line-height: 200px;
+    font-weight: bold;
+}
+
+tr,
+td.th {
+    line-height: 40px;
+    margin: 10px;
+    font-family: roboto;
+    font-weight: bold;
+    color: rgb(157, 255, 0);
+    font-size: 25px;
+}
+
+input#username,
+input#password {
+    height: 30px;
+    border-radius: 10px/15px;
+}
+
+input#login {
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    border-radius: 10px/10px;
+    color: rgb(20, 4, 110);
+    font-weight: bold;
+    background-image: linear-gradient(to left, rgb(170, 9, 9), rgb(206, 219, 24), rgb(10, 170, 71));
+}

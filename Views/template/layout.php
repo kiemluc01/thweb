@@ -10,6 +10,8 @@
     <link rel="icon" href="Public/images/logo_tabbar.png" type="image/x-icon">
     <link rel="stylesheet" href="Public/css/menu.css">
     <link rel="stylesheet" href="Public/css/animate.css">
+    <link rel="stylesheet" href="Public/css/login.css">
+    <link rel="stylesheet" href="Public/css/register.css">
 
 </head>
 

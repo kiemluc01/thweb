@@ -692,3 +692,9 @@
      animation-iteration-count: 1;
      animation-fill-mode: forwards;
  }
+ /* login */
+ 
+ div.banner_left,
+ div.banner_right {
+     background-image: linear-gradient(top to left, red, blue, pink);
+ }
