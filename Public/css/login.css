@@ -1,6 +1,11 @@
+body {
+    margin: 0;
+    height: 100%;
+}
+
 div#login {
     background-image: url('../images/background.jpg');
-    height: 650px;
+    height: 100vh;
     width: 60%;
 }
 
@@ -11,8 +16,7 @@ div#login_container {
 div.banner_left,
 div.banner_right {
     width: 20%;
-    height: 100%;
-    background-image: linear-gradient(bottom to left, rgb(141, 248, 252), rgb(153, 245, 141), rgb(238, 240, 135));
+    height: 100vh;
 }
 
 @font-face {

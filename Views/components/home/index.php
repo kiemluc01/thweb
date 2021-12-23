@@ -1,5 +1,25 @@
+<?php
+if (isset($_REQUEST['login'])) {
+    if (!(isset($_REQUEST['username']) || isset($_REQUEST['password'])))
+        echo '<script> alert("không được bỏ trống các mục") </script>';
+    else {
+        $login = loadModel('Login');
+        if ($login->login($_REQUEST['username'], $_REQUEST['password'])) {
+            echo '<script> alert("Đăng nhập thành công") 
+                location="index.php?cat=personal";
+            </script>';
+        } else
+            echo '<script> alert("Sai tài khoản hoặc mật khẩu") </script>';
+    }
+}
+?>
 <div id="login_container">
-    <div class="banner_left"></div>
+    <div class="banner_left">
+        <img src="Public/images/background2.jpg" alt="" style="width:100%;height:100vh;">
+        <div class="Xu_login"></div>
+        <div class="L_login"></div>
+        <div class="T_login"></div>
+    </div>
     <div id="login">
         <center>
             <form action="" method="post">
@@ -33,5 +53,12 @@
             </form>
         </center>
     </div>
-    <div class="banner_right"></div>
+    <div class="banner_right">
+        <img src="Public/images/background2.jpg" alt="" style="width:100%;height:100vh;">
+        <div class="Tai"></div>
+        <div class="Chinh"></div>
+        <div class="Ca"></div>
+        <div class="Ca"></div>
+
+    </div>
 </div>
