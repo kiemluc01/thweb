@@ -175,8 +175,8 @@
  div#coin {
      position: relative;
      animation-name: coin;
-     animation-duration: 3s;
-     animation-iteration-count: 3;
+     animation-duration: 5s;
+     animation-iteration-count: 1;
      animation-fill-mode: forwards;
  }
  /* logo L */
@@ -346,8 +346,8 @@
  div#L {
      position: relative;
      animation-name: L;
-     animation-duration: 3s;
-     animation-iteration-count: 3;
+     animation-duration: 5s;
+     animation-iteration-count: 1;
      animation-fill-mode: forwards;
  }
  /* logo T */
@@ -517,8 +517,8 @@
  div#T {
      animation-name: T;
      position: relative;
-     animation-duration: 3s;
-     animation-iteration-count: 3;
+     animation-duration: 5s;
+     animation-iteration-count: 1;
      animation-fill-mode: forwards;
  }
  /* logo Chu */
@@ -688,7 +688,7 @@
  div#Chu {
      animation-name: Chu;
      position: fixed;
-     animation-duration: 3s;
-     animation-iteration-count: 3;
+     animation-duration: 5s;
+     animation-iteration-count: 1;
      animation-fill-mode: forwards;
  }
