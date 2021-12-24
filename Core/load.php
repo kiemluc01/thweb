@@ -72,7 +72,3 @@ function loadMenu()
         echo 'cú tìm ra menu in rứa mô mà load cha';
     }
 }
-
-
-
-

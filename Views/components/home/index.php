@@ -6,7 +6,7 @@ if (isset($_REQUEST['login'])) {
         $login = loadModel('Login');
         if ($login->login($_REQUEST['username'], $_REQUEST['password'])) {
             echo '<script> alert("Đăng nhập thành công") 
-                location="index.php?cat=personal";
+                location="index.php?cat=personal&user=' . $_REQUEST['username'] . '";
             </script>';
         } else
             echo '<script> alert("Sai tài khoản hoặc mật khẩu") </script>';

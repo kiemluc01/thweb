@@ -62,5 +62,14 @@ div.personal {
     display: block;
     position: fixed;
     top: 2vh;
-    left: 90%;
+    left: 80%;
+    display: flex;
+}
+
+div.personal>h3 {
+    color: #FFF;
+    font-family: roboto;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-top: 15%;
 }
