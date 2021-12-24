@@ -951,14 +951,16 @@
          left: 2%;
      }
  }
- /* div.Xu_login {
+ 
+ div.Xu_login {
      animation-name: Xu_login;
      position: fixed;
      animation-duration: 5s;
      animation-iteration-count: 1;
      animation-fill-mode: forwards;
- } */
- /* @keyframes L_login {
+ }
+ 
+ @keyframes L_login {
      0% {
          height: 40px;
          width: 40px;
@@ -1091,7 +1093,7 @@
          height: 40px;
          width: 40px;
          border-radius: 20px/20px;
-         top: 7.5%;
+         top: 9.6%;
          left: 10%;
          background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
      }
@@ -1099,7 +1101,7 @@
          height: 40px;
          width: 40px;
          border-radius: 20px/20px;
-         top: 8%;
+         top: 10.2%;
          left: 10%;
          background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
      }
@@ -1107,7 +1109,7 @@
          height: 40px;
          width: 40px;
          border-radius: 20px/20px;
-         top: 8.5%;
+         top: 10.8%;
          left: 10%;
          background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
      }
@@ -1115,7 +1117,7 @@
          height: 40px;
          width: 40px;
          border-radius: 20px/20px;
-         top: 9%;
+         top: 11.4%;
          left: 10%;
          background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
      }
@@ -1123,7 +1125,7 @@
          height: 40px;
          width: 40px;
          border-radius: 20px/20px;
-         top: 9.5%;
+         top: 11.8%;
          left: 10%;
          background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
      }
@@ -1131,7 +1133,7 @@
          height: 40px;
          width: 40px;
          border-radius: 20px/20px;
-         top: 10%;
+         top: 12.2%;
          left: 10%;
          background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
      }
@@ -1139,7 +1141,7 @@
          height: 40px;
          width: 40px;
          border-radius: 20px/20px;
-         top: 10.5%;
+         top: 12.8%;
          left: 10%;
          background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
      }
@@ -1147,7 +1149,7 @@
          height: 40px;
          width: 40px;
          border-radius: 20px/20px;
-         top: 11%;
+         top: 13.4%;
          left: 10%;
          background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
      }
@@ -1155,7 +1157,7 @@
          height: 40px;
          width: 40px;
          border-radius: 20px/20px;
-         top: 11.5%;
+         top: 13.8%;
          left: 10%;
          background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
      }
@@ -1163,7 +1165,7 @@
          height: 40px;
          width: 40px;
          border-radius: 20px/20px;
-         top: 12%;
+         top: 14.4%;
          left: 10%;
          background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
      }
@@ -1171,7 +1173,7 @@
          height: 40px;
          width: 40px;
          border-radius: 20px/20px;
-         top: 12.5%;
+         top: 15%;
          left: 10%;
          background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
      }
@@ -1179,7 +1181,7 @@
          height: 40px;
          width: 40px;
          border-radius: 20px/20px;
-         top: 13%;
+         top: 15.6%;
          left: 10%;
          background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
      }
@@ -1187,7 +1189,7 @@
          height: 40px;
          width: 40px;
          border-radius: 20px/20px;
-         top: 13.5%;
+         top: 16.2%;
          left: 10%;
          background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
      }
@@ -1195,7 +1197,7 @@
          height: 40px;
          width: 40px;
          border-radius: 20px/20px;
-         top: 14%;
+         top: 16.8%;
          left: 10%;
          background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
      }
@@ -1448,50 +1450,44 @@
          background-image: url('../images/L.png');
      }
      100% {
-         background-image: url('../images/L.png');
+         /* background-image: url('../images/L.png'); */
+         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
          width: 173px;
          height: 155px;
+         border-radius: 86px/77px;
          top: 40%;
          left: 2%;
      }
- } */
+ }
  
- @keyframes L2 {
+ @keyframes L_login2 {
      0% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
          top: 0%;
          left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     30% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 40%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     40% {
-         background-image: url('../images/L.png');
          width: 40px;
          height: 40px;
          border-radius: 20px/20px;
-         top: 50%;
-         left: 10%;
+         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
      }
      60% {
-         background-image: url('../images/L.png');
+         top: 50%;
+         left: 10%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
+     }
+     100% {
+         top: 50%;
+         left: 10%;
          width: 173px;
          height: 155px;
-         top: 40%;
-         left: 10%;
+         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
      }
  }
  
  div.L_login {
-     animation-name: L2;
+     animation-name: L_login2;
      position: fixed;
      animation-duration: 5s;
      animation-iteration-count: 1;
