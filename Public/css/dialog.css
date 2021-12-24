@@ -1,0 +1,31 @@
+#dialog_regiter_null,
+#dialog_regiter_pass,
+#dialog_regiter_succes {
+    height: 20vh;
+    width: 25%;
+    border-radius: 10%/25%;
+    background-image: linear-gradient(to left, rgb(219, 193, 105), rgb(135, 228, 98), rgb(26, 155, 101));
+    display: none;
+    position: absolute;
+    top: 40vh;
+    left: 37%;
+}
+
+#dialog_regiter_succes {
+    height: 25vh;
+    top: 37vh;
+}
+
+h3.dialog {
+    padding-top: 20px;
+}
+
+input.dialog {
+    height: 30px;
+    width: 50px;
+    font-size: 20px;
+    border-radius: 10px/10px;
+    color: rgb(20, 4, 110);
+    font-weight: bold;
+    background-image: linear-gradient(to left, rgb(170, 9, 9), rgb(206, 219, 24), rgb(10, 170, 71));
+}

@@ -57,3 +57,10 @@ img#logo_menu {
         transform: rotate(360deg)
     }
 }
+
+div.personal {
+    display: block;
+    position: fixed;
+    top: 2vh;
+    left: 90%;
+}

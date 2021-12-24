@@ -1,6 +1,6 @@
 <?php
 if (isset($_REQUEST['login'])) {
-    if (!(isset($_REQUEST['username']) || isset($_REQUEST['password'])))
+    if (!(isset($_REQUEST['username']) && isset($_REQUEST['password'])))
         echo '<script> alert("không được bỏ trống các mục") </script>';
     else {
         $login = loadModel('Login');
@@ -47,7 +47,7 @@ if (isset($_REQUEST['login'])) {
                     </tr>
                     <tr>
                         <td colspan="2">
-                            Bạn chưa có tài khoản?<a href=""> đăng kí</a>
+                            Bạn chưa có tài khoản?<a href="index.php?cat=register"> đăng kí</a>
                         </td>
                     </tr>
                 </table>

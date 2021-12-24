@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="Public/css/menu.css">
     <link rel="stylesheet" href="Public/css/animate.css">
     <link rel="stylesheet" href="Public/css/login.css">
-    <link rel="stylesheet" href="Public/css/register.css">
+    <link rel="stylesheet" href="Public/css/dialog.css">
 
 </head>
 

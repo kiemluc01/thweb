@@ -1,6 +1,6 @@
  div#banner {
      width: 80%;
-     height: 650px;
+     height: 100vh;
      background-image: url('../images/background.jpg');
      display: flex;
  }

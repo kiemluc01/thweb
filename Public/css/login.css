@@ -3,7 +3,8 @@ body {
     height: 100%;
 }
 
-div#login {
+div#login,
+div#register {
     background-image: url('../images/background.jpg');
     height: 100vh;
     width: 60%;
@@ -41,13 +42,25 @@ td.th {
     font-size: 25px;
 }
 
+p#error {
+    color: rgb(255, 2, 2);
+    position: fixed;
+    top: 22vh;
+    left: 36%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
 input#username,
-input#password {
+input#password,
+input#Cpassword,
+input#email {
     height: 30px;
     border-radius: 10px/15px;
 }
 
-input#login {
+input#login,
+input#register {
     height: 40px;
     width: 150px;
     font-size: 20px;
