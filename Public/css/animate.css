@@ -696,263 +696,40 @@
  
  @keyframes Xu_login {
      0% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
          top: 0%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     1% {
-         height: 40px;
+         left: 8%;
          width: 40px;
-         border-radius: 20px/20px;
-         top: 0.4%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     2% {
          height: 40px;
-         width: 40px;
          border-radius: 20px/20px;
-         top: 0.8%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     3% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 1.2%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     4% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 1.6%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     5% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 2%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     6% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 2.4%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     7% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 2.8%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     8% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 3.2%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     9% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 3.6%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     10% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 4%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     11% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 4.4%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     12% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 4.8%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     13% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 5.2%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     14% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 5.6%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     15% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 6%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     16% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 6.4%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     17% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 6.8%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     18% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 7.2%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     19% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 7.6%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     20% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 8%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     21% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 8.4%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     22% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 8.8%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     23% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 9.2%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     24% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 9.6%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     25% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 10%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     26% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 10.4%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     27% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 10.8%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     28% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 11.2%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     29% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 11.6%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
+         content: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
      }
      30% {
-         height: 40px;
+         top: 20%;
+         left: 8%;
          width: 40px;
+         height: 40px;
          border-radius: 20px/20px;
-         top: 12%;
-         left: 10%;
-         background-image: url('../images/xu.png');
+         content: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
+     }
+     35% {
+         top: 20%;
+         left: 8%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+         content: url('../images/xu.png');
      }
      100% {
-         background-image: url('../images/xu.png');
-         width: 197px;
-         height: 216px;
          top: 5%;
          left: 2%;
+         width: 16%;
+         height: 25%;
+         border-radius: 50%/50%;
+         content: url('../images/xu.png');
      }
  }
  
- div.Xu_login {
+ .Xu_login {
      animation-name: Xu_login;
      position: fixed;
      animation-duration: 5s;
@@ -962,534 +739,240 @@
  
  @keyframes L_login {
      0% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
          top: 0%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     1% {
-         height: 40px;
+         left: 8%;
          width: 40px;
-         border-radius: 20px/20px;
-         top: 0.6%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     2% {
          height: 40px;
-         width: 40px;
          border-radius: 20px/20px;
-         top: 1.2%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     3% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 1.8%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     4% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 2.4%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     5% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 3%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     6% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 3.6%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     7% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 4.2%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     8% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 4.8%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     9% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 5.4%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     10% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 6%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     11% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 6.6%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     12% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 7.2%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     13% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 7.8%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     14% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 8.4%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     15% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 9%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     16% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 9.6%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     17% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 10.2%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     18% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 10.8%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     19% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 11.4%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     20% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 11.8%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     21% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 12.2%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     22% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 12.8%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     23% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 13.4%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     24% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 13.8%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     25% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 14.4%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     26% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 15%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     27% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 15.6%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     28% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 16.2%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     29% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 16.8%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     30% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 14.5%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     31% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 15%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     32% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 15.5%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     33% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 16%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     34% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 16.5%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     35% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 17%;
-         left: 10%;
-         background-image: url('../images/xu.png');
-     }
-     36% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 17.5%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     37% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 18%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     38% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 18.5%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     39% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 19%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     40% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 19.5%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     41% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 20%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     42% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 20.5%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     43% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 21%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     44% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 21.5%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     45% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 22%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     46% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 22.5%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     47% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 23%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     48% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 23.5%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     49% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 24%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     50% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 24.5%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     51% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 25%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     52% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 25.5%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     53% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 26%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     54% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 26.5%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
+         content: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
      }
      55% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 27%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     56% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 27.5%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     57% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 28%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     58% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 28.5%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     59% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 29%;
-         left: 10%;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-     }
-     60% {
-         height: 40px;
-         width: 40px;
-         border-radius: 20px/20px;
-         top: 29.5%;
-         left: 10%;
-         background-image: url('../images/L.png');
-     }
-     100% {
-         /* background-image: url('../images/L.png'); */
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
-         width: 173px;
-         height: 155px;
-         border-radius: 86px/77px;
-         top: 40%;
-         left: 2%;
-     }
- }
- 
- @keyframes L_login2 {
-     0% {
-         top: 0%;
-         left: 10%;
+         top: 50%;
+         left: 8%;
          width: 40px;
          height: 40px;
          border-radius: 20px/20px;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
+         content: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
      }
      60% {
          top: 50%;
-         left: 10%;
+         left: 8%;
          width: 40px;
          height: 40px;
          border-radius: 20px/20px;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
+         content: url('../images/L.png');
      }
      100% {
-         top: 50%;
-         left: 10%;
-         width: 173px;
-         height: 155px;
-         background-image: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
+         top: 32.5%;
+         left: 1%;
+         width: 18%;
+         height: 30%;
+         content: url('../images/L.png');
      }
  }
  
- div.L_login {
-     animation-name: L_login2;
+ .L_login {
+     animation-name: L_login;
      position: fixed;
      animation-duration: 5s;
+     animation-iteration-count: 1;
+     animation-fill-mode: forwards;
+ }
+ 
+ @keyframes T_login {
+     0% {
+         top: 0%;
+         left: 8%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+         content: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
+     }
+     65% {
+         top: 80%;
+         left: 8%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+         content: linear-gradient(to left, rgb(172, 241, 42), rgb(42, 228, 241));
+     }
+     70% {
+         top: 80%;
+         left: 10%;
+         width: 40px;
+         height: 40px;
+         border-radius: 20px/20px;
+         content: url('../images/T.png');
+     }
+     100% {
+         top: 65%;
+         left: 1%;
+         width: 18%;
+         height: 30%;
+         content: url('../images/T.png');
+     }
+ }
+ 
+ .T_login {
+     animation-name: T_login;
+     position: fixed;
+     animation-duration: 5s;
+     animation-iteration-count: 1;
+     animation-fill-mode: forwards;
+ }
+ 
+ @keyframes Tai {
+     50% {
+         top: -50%;
+         left: 81%;
+         width: 18%;
+         height: 10%;
+         content: url('../images/Tai.png');
+     }
+     55% {
+         top: 0%;
+         left: 81%;
+         width: 18%;
+         height: 10%;
+         content: url('../images/Tai.png');
+     }
+     62.5% {
+         top: 10%;
+         left: 81%;
+         width: 18%;
+         height: 10%;
+         content: url('../images/Tai.png');
+     }
+     100% {
+         top: 12%;
+         left: 81%;
+         width: 18%;
+         height: 10%;
+         content: url('../images/Tai.png');
+     }
+ }
+ 
+ .Tai {
+     animation-name: Tai;
+     position: fixed;
+     animation-duration: 10s;
+     animation-iteration-count: 1;
+     animation-fill-mode: forwards;
+ }
+ 
+ @keyframes Chinh {
+     62.5% {
+         top: -50%;
+         left: 81%;
+         width: 18%;
+         height: 10%;
+         content: url('../images/Chinh.png');
+     }
+     67.5% {
+         top: 0%;
+         left: 81%;
+         width: 18%;
+         height: 10%;
+         content: url('../images/Chinh.png');
+     }
+     75% {
+         top: 32%;
+         left: 81%;
+         width: 18%;
+         height: 10%;
+         content: url('../images/Chinh.png');
+     }
+     100% {
+         top: 34%;
+         left: 81%;
+         width: 18%;
+         height: 10%;
+         content: url('../images/Chinh.png');
+     }
+ }
+ 
+ .Chinh {
+     animation-name: Chinh;
+     position: fixed;
+     animation-duration: 10s;
+     animation-iteration-count: 1;
+     animation-fill-mode: forwards;
+ }
+ 
+ @keyframes Ca {
+     75% {
+         top: -50%;
+         left: 81%;
+         width: 18%;
+         height: 10%;
+         content: url('../images/Ca.png');
+     }
+     80% {
+         top: 0%;
+         left: 81%;
+         width: 18%;
+         height: 10%;
+         content: url('../images/Ca.png');
+     }
+     87.5% {
+         top: 54%;
+         left: 81%;
+         width: 18%;
+         height: 10%;
+         content: url('../images/Ca.png');
+     }
+     100% {
+         top: 56%;
+         left: 81%;
+         width: 18%;
+         height: 10%;
+         content: url('../images/Ca.png');
+     }
+ }
+ 
+ .Ca {
+     animation-name: Ca;
+     position: fixed;
+     animation-duration: 10s;
+     animation-iteration-count: 1;
+     animation-fill-mode: forwards;
+ }
+ 
+ @keyframes Nhan {
+     87.5% {
+         top: -50%;
+         left: 81%;
+         width: 18%;
+         height: 10%;
+         content: url('../images/Nhan.png');
+     }
+     92.5% {
+         top: 0%;
+         left: 81%;
+         width: 18%;
+         height: 10%;
+         content: url('../images/Nhan.png');
+     }
+     97% {
+         top: 76%;
+         left: 81%;
+         width: 18%;
+         height: 10%;
+         content: url('../images/Nhan.png');
+     }
+     100% {
+         top: 78%;
+         left: 81%;
+         width: 18%;
+         height: 10%;
+         content: url('../images/Nhan.png');
+     }
+ }
+ 
+ .Nhan {
+     animation-name: Nhan;
+     position: fixed;
+     animation-duration: 10s;
      animation-iteration-count: 1;
      animation-fill-mode: forwards;
  }

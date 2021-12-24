@@ -16,9 +16,10 @@ if (isset($_REQUEST['login'])) {
 <div id="login_container">
     <div class="banner_left">
         <img src="Public/images/background2.jpg" alt="" style="width:100%;height:100vh;">
-        <div class="Xu_login"></div>
-        <div class="L_login"></div>
-        <div class="T_login"></div>
+
+        <img src="" alt="" class="Xu_login">
+        <img src="" alt="" class="L_login">
+        <img src="" alt="" class="T_login">
     </div>
     <div id="login">
         <center>
@@ -55,10 +56,10 @@ if (isset($_REQUEST['login'])) {
     </div>
     <div class="banner_right">
         <img src="Public/images/background2.jpg" alt="" style="width:100%;height:100vh;">
-        <div class="Tai"></div>
-        <div class="Chinh"></div>
-        <div class="Ca"></div>
-        <div class="Ca"></div>
+        <img src="" alt="" class="Tai">
+        <img src="" alt="" class="Chinh">
+        <img src="" alt="" class="Ca">
+        <img src="" alt="" class="Nhan">
 
     </div>
 </div>
