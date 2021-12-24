@@ -1,0 +1,15 @@
+div#BGR_IMG {
+    width: 80%;
+    height: 20vh;
+    border: 1px black;
+}
+
+div.content {
+    width: 80%;
+    height: 80vh;
+    border: 1px black;
+}
+
+div#content {
+    background-image: url('../images/background.jpg');
+}
