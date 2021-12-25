@@ -1,15 +1,25 @@
-div#BGR_IMG {
-    width: 80%;
-    height: 20vh;
-    border: 1px black;
+div#BGR {
+    width: 100%;
+    height: 40%;
+    background-image: url('../images/background2.jpg');
 }
 
-div.content {
-    width: 80%;
-    height: 80vh;
-    border: 1px black;
+div.infor {
+    width: 100%;
+    height: 60%;
 }
 
-div#content {
+div#person {
     background-image: url('../images/background.jpg');
+    height: 100vh;
+    width: 80%;
+}
+
+img#AVT {
+    height: 200px;
+    width: 200px;
+    position: fixed;
+    top: 20%;
+    left: 53%;
+    border-radius: 50%/50%;
 }
