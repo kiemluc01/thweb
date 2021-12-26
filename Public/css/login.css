@@ -32,7 +32,7 @@ th.login {
     font-weight: bold;
 }
 
-tr,
+tr.login,
 td.login,
 th.login {
     line-height: 40px;

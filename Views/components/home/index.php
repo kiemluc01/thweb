@@ -25,27 +25,27 @@ if (isset($_REQUEST['login'])) {
         <center>
             <form action="" method="post">
                 <table>
-                    <tr>
+                    <tr class="login">
                         <th colspan="2" class="login">ĐĂNG NHẬP</th>
                     </tr>
-                    <tr>
+                    <tr class="login">
                         <td class="login">Tên đăng nhập: </td>
                         <td class="login">
                             <input type="text" id="username" name="username">
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="login">
                         <td class="login">Mật khẩu: </td>
                         <td class="login">
                             <input type="password" name="password" id="password">
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="login">
                         <td colspan="2" class="login">
                             <center><input type="submit" value="đăng nhập" id="login" name="login"></center>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="login">
                         <td colspan="2" class="login">
                             Bạn chưa có tài khoản?<a href="index.php?cat=register"> đăng kí</a>
                         </td>
