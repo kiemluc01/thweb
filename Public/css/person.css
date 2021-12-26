@@ -26,6 +26,11 @@ img#AVT {
     font-size: 25px;
     color: black;
     font-family: roboto;
+    margin: 10px;
+}
+
+table#infor_person>tr {
+    margin: 0;
 }
 
 @font-face {
