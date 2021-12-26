@@ -13,6 +13,18 @@ class Personal extends Database
         }
         echo $href;
     }
+    function loadBGR($user)
+    {
+        $sql = "select BGR from tblAccount where username = '" . $user . "'";
+        $result = mysqli_query($this->conn, $sql);
+        $href = '';
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                $href = $row['BGR'];
+            }
+        }
+        echo $href;
+    }
     function loadName($user)
     {
         $sql = "select TenND from tblAccount where username = '" . $user . "'";

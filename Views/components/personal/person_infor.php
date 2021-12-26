@@ -6,9 +6,10 @@ $person = loadModel('Personal');
     <div id="menu">
         <?php loadModule('menu'); ?>
     </div>
+
     <div id="person">
         <img src="<?php $person->loadIMG($_REQUEST['user']); ?>" alt="" id="AVT">
-        <div id="BGR"></div>
+        <div id="BGR" style="background-image: url('<?php $person->loadBGR($_REQUEST['user']) ?>');"></div>
         <div id="infor"></div>
     </div>
 

@@ -1,7 +1,6 @@
 div#BGR {
     width: 100%;
     height: 40%;
-    background-image: url('../images/background2.jpg');
 }
 
 div.infor {
@@ -10,7 +9,6 @@ div.infor {
 }
 
 div#person {
-    background-image: url('../images/background.jpg');
     height: 100vh;
     width: 80%;
 }
