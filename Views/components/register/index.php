@@ -20,44 +20,44 @@ if (isset($_REQUEST['register'])) {
 
                 <table>
                     <tr>
-                        <th colspan="2">ĐĂNG KÍ</th>
+                        <th colspan="2" class="login">ĐĂNG KÍ</th>
                     </tr>
 
 
 
                     <tr>
-                        <td>
+                        <td class="login">
                             Email:
                         </td>
-                        <td>
+                        <td class="login">
                             <input type="text" name="email" id="email" placeholder="Enter your email" onclick="return false">
                         </td>
                     </tr>
                     <tr>
-                        <td>Tên đăng nhập: </td>
-                        <td>
+                        <td class="login">Tên đăng nhập: </td>
+                        <td class="login">
                             <input type="text" id="username" name="username" placeholder="Enter Your usrname" onclick="return false">
                         </td>
                     </tr>
                     <tr>
-                        <td>Mật khẩu: </td>
-                        <td>
+                        <td class="login">Mật khẩu: </td>
+                        <td class="login">
                             <input type="password" name="password" id="password" placeholder="Enter your password" onclick="return false">
                         </td>
                     </tr>
                     <tr>
-                        <td>Nhập lại mật khẩu: </td>
-                        <td>
+                        <td class="login">Nhập lại mật khẩu: </td>
+                        <td class="login">
                             <input type="password" name="Cpassword" id="Cpassword" placeholder="Confirm your password" onclick="return false">
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2">
+                        <td colspan="2" class="login">
                             <center><input type="submit" value="đăng kí" id="register" name="register"></center>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2">
+                        <td colspan="2" class="login">
                             Bạn đã có tài khoản?<a href="index.php"> đăng nhập</a>
                         </td>
                     </tr>

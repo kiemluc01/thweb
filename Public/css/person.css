@@ -21,3 +21,14 @@ img#AVT {
     left: 53%;
     border-radius: 50%/50%;
 }
+
+.infor_person {
+    font-size: 25px;
+    color: black;
+    font-family: roboto;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
