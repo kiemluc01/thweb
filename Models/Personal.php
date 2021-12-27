@@ -115,7 +115,7 @@ class Personal extends Database
     {
         $sql = "update tblAccount set TenND =N'" . $ten . "',email='" . $email . "',NS='" . $ns . "',GT='" . $gt . "',pass='" . $pass . "' where username = '" . $_REQUEST['user'] . "';";
         if (mysqli_query($this->conn, $sql)) {
-            echo '<script> alert("cập nhật thành công");</script>';
+            echo "<script> document.getElementById('message').style.display = 'block';</script>";
         } else {
             echo mysqli_error($this->conn);
         }

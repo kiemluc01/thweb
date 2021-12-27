@@ -2,8 +2,14 @@
 $person = loadModel('Personal');
 if (isset($_REQUEST['update'])) {
     $person->update_infor($_REQUEST['name'], $_REQUEST['email'], $_REQUEST['DoB'], $_REQUEST['GT'], $_REQUEST['pass']);
+    echo "<script> 
+    $(document).ready(function() {
+        document.getElementById('message').style.display = 'block';
+    })
+    </script>";
 }
 ?>
+
 <div class="menu_container">
     <div id="menu">
         <?php loadModule('menu'); ?>
@@ -11,10 +17,10 @@ if (isset($_REQUEST['update'])) {
 
     <div id="person">
         <img src="<?php $person->loadIMG($_REQUEST['user']); ?>" alt="" id="AVT">
-        <a href="<?php echo 'index.php?cat=loadIMG&load=AVT&user=' . $_REQUEST['user']; ?>" id="camera_AVT" class="camera"><img src="Public/images/camera.jpg" alt=""></a>
+        <img src="Public/images/camera.jpg" alt="" id="camera_AVT" class="camera">
         <div id="BGR" style="background-color: rgb(163, 163, 163);">
             <div style="background-image: url('<?php $person->loadBGR($_REQUEST['user']) ?>'); width:70%; height:100%;margin-left:15%">
-                <a href="<?php echo 'index.php?cat=loadIMG&load=BGR&user=' . $_REQUEST['user']; ?>" id="camera_BGR" class="camera"><img src="Public/images/camera.jpg" alt=""></a>
+                <img src="Public/images/camera.jpg" alt="" id="camera_BGR" class="camera">
             </div>
 
         </div>
@@ -67,10 +73,24 @@ if (isset($_REQUEST['update'])) {
     </div>
 
 </div>
+<div id="message">
+    <center>
+        <h3>cập nhật thành công</h3><br>
+        <input type="submit" value="OK" id="ok" class="dialog">
+    </center>
+</div>
+<div id="loadAVT">
+    <form action="" method="post">
+        <center>
+            <h1>cập nhật ảnh đại diện</h1>
+            <input type="file" name="AVT">
+            <input type="submit" id="ok_avt" value="cập nhật">
+        </center>
+    </form>
+</div>
 <script>
     $(document).ready(function() {
         $('#hide').click(function() {
-
             if (document.getElementById('pass').type == 'password') {
                 document.getElementById('hide').src = 'Public/images/hide.png';
                 document.getElementById('pass').type = 'text';
@@ -79,5 +99,8 @@ if (isset($_REQUEST['update'])) {
                 document.getElementById('pass').type = 'password';
             }
         });
+        $('#ok').click(function() {
+            document.getElementById('message').style.display = 'none'
+        })
     })
 </script>
