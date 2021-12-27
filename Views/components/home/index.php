@@ -1,12 +1,13 @@
 <?php
+
 if (isset($_REQUEST['login'])) {
-    if (!(isset($_REQUEST['username']) && isset($_REQUEST['password'])))
+    if (!(isset($_REQUEST['username_login']) && isset($_REQUEST['password'])))
         echo '<script> alert("không được bỏ trống các mục") </script>';
     else {
         $login = loadModel('Login');
-        if ($login->login($_REQUEST['username'], $_REQUEST['password'])) {
+        if ($login->login($_REQUEST['username_login'], $_REQUEST['password'])) {
             echo '<script> alert("Đăng nhập thành công") 
-                location="index.php?cat=personal&user=' . $_REQUEST['username'] . '";
+                location="index.php?cat=personal&user=' . $_REQUEST['username_login'] . '";
             </script>';
         } else
             echo '<script> alert("Sai tài khoản hoặc mật khẩu") </script>';
@@ -31,7 +32,8 @@ if (isset($_REQUEST['login'])) {
                     <tr class="login">
                         <td class="login">Tên đăng nhập: </td>
                         <td class="login">
-                            <input type="text" id="username" name="username">
+                            <input type="text" id="username_login" name="username_login">
+                            <img src="Public/images/show.png" alt="" id="hide" style="width:30px;height:20px; position:absolute;top: 40.5vh;left:60.3%;">
                         </td>
                     </tr>
                     <tr class="login">
@@ -63,3 +65,17 @@ if (isset($_REQUEST['login'])) {
 
     </div>
 </div>
+<script>
+    $(document).ready(function() {
+        $('#hide').click(function() {
+
+            if (document.getElementById('password').type == 'password') {
+                document.getElementById('hide').src = 'Public/images/hide.png';
+                document.getElementById('password').type = 'text';
+            } else {
+                document.getElementById('hide').src = 'Public/images/show.png';
+                document.getElementById('password').type = 'password';
+            }
+        });
+    })
+</script>

@@ -52,7 +52,7 @@ p#error {
     font-weight: bold;
 }
 
-input#username,
+input#username_login,
 input#password,
 input#Cpassword,
 input#email {
