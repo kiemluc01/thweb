@@ -41,7 +41,6 @@ tr.infor_person {
 
 table#infor_person {
     margin-top: 10vh;
-    margin-left: 30%;
 }
 
 @font-face {
@@ -62,4 +61,22 @@ input#update {
 #DoB,
 #GT {
     height: 25px;
+}
+
+input.camera {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%/50%;
+    background-image: url('../images/camera.jpg');
+    line-height: 50px;
+}
+
+#camera_BGR {
+    margin-top: 28%;
+}
+
+#camera_AVT {
+    position: absolute;
+    top: 40%;
+    left: 53%;
 }

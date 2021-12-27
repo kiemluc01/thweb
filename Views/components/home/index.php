@@ -26,7 +26,7 @@ if (isset($_REQUEST['login'])) {
             <form action="" method="post">
                 <table>
                     <tr class="login">
-                        <th colspan="2" class="login">ĐĂNG NHẬP</th>
+                        <th colspan="2" class="login" style="color: rgb(255, 43, 5);font-size: 50px;line-height: 200px;font-weight: bold;">ĐĂNG NHẬP</th>
                     </tr>
                     <tr class="login">
                         <td class="login">Tên đăng nhập: </td>
