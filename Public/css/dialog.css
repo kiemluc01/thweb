@@ -6,24 +6,44 @@
     width: 25%;
     border-radius: 10%/25%;
     background-image: linear-gradient(to left, rgb(219, 193, 105), rgb(135, 228, 98), rgb(26, 155, 101));
-    /* display: none; */
+    display: block;
     position: absolute;
     top: 40vh;
     left: 45%;
 }
 
-#loadAVT {
-    height: 50vh;
+#loadAVT,
+#loadBGR {
+    height: 40vh;
     width: 40%;
     position: absolute;
     left: 30%;
     top: 25vh;
     background-image: linear-gradient(to bottom, rgb(142, 247, 224), rgb(138, 207, 253));
-    border-radius: 10%/10%;
+    display: flex;
+    border-radius: 10px/10px;
 }
 
-#loadAVT.form {
+#loadAVT>form,
+#loadBGR>form {
     display: block;
+    width: 93%;
+}
+
+#loadAVT>form input,
+#loadBGR>form input {
+    display: block;
+    margin-top: 10%;
+}
+
+input#ok_avt,
+#ok_bgr {
+    height: 30px;
+    width: 20%;
+    border-radius: 10px/10px;
+    font-family: roboto;
+    font-weight: bold;
+    background-image: linear-gradient(to right, rgb(0, 238, 255), rgb(2, 145, 211), rgb(4, 92, 255));
 }
 
 #dialog_regiter_succes {
@@ -43,4 +63,11 @@ input.dialog {
     color: rgb(20, 4, 110);
     font-weight: bold;
     background-image: linear-gradient(to left, rgb(170, 9, 9), rgb(206, 219, 24), rgb(10, 170, 71));
+}
+
+img#closeAVT,
+#closeBGR {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%/50%;
 }
