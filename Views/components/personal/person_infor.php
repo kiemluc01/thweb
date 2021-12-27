@@ -9,13 +9,27 @@ if (isset($_REQUEST['update'])) {
     </script>";
 }
 if (isset($_REQUEST['ok_avt'])) {
-    echo "<script> alert('click') </script>";
     $file = $_FILES['AVT']['tmp_name'];
     $path = 'Public/images/' . $_FILES['AVT']['name'];
     if (move_uploaded_file($file, $path)) {
+        $person->update_IMGAVT($path);
         echo "<script>
             document.ready(function(){
                 document.getElementById('loadAVT').style.display = 'none';
+                
+            });
+        </script>";
+    } else
+        echo 'fail';
+}
+if (isset($_REQUEST['ok_bgr'])) {
+    $file = $_FILES['BGR']['tmp_name'];
+    $path = 'Public/images/' . $_FILES['BGR']['name'];
+    if (move_uploaded_file($file, $path)) {
+        $person->update_IMGBGR($path);
+        echo "<script>
+            document.ready(function(){
+                document.getElementById('loadBGR').style.display = 'none';
                 document.getElementById('message').style.display = 'block';
             });
         </script>";
@@ -33,8 +47,10 @@ if (isset($_REQUEST['ok_avt'])) {
         <img src="<?php $person->loadIMG($_REQUEST['user']); ?>" alt="" id="AVT">
         <img src="Public/images/camera.jpg" alt="" id="camera_AVT" class="camera">
         <div id="BGR" style="background-color: rgb(163, 163, 163);">
-            <div style="background-image: url('<?php $person->loadBGR($_REQUEST['user']); ?>'); width:70%; height:100%;margin-left:15%">
+            <div style=" width:70%; height:100%;margin-left:15%">
                 <img src="Public/images/camera.jpg" alt="" id="camera_BGR" class="camera">
+                <img src="<?php $person->loadBGR($_REQUEST['user']); ?>" alt="" style="width:100%; height:100%">
+
             </div>
 
         </div>
@@ -94,30 +110,28 @@ if (isset($_REQUEST['ok_avt'])) {
     </center>
 </div>
 <div id="loadAVT">
-    <form action="<?php echo 'index.php?cat=personal&sub_cat=person_infor&user=' . $_REQUEST['user']; ?>" method="post">
+    <form action="<?php echo 'index.php?cat=personal&sub_cat=person_infor&user=' . $_REQUEST['user']; ?>" method="post" enctype="multipart/form-data">
         <center>
             <h1>cập nhật ảnh đại diện</h1>
-            <input type="file" name="AVT">
-            <input type="submit" id="ok_avt" value="cập nhật">
+            <input type="file" name="AVT" id="AVT">
+            <input type="submit" id="ok_avt" name="ok_avt" value="cập nhật">
         </center>
     </form>
     <img src="Public/images/close.png" alt="" id="closeAVT">
 </div>
 <div id="loadBGR">
-    <form action="<?php echo 'index.php?cat=personal&sub_cat=person_infor&user=' . $_REQUEST['user']; ?>" method="post">
+    <form action="<?php echo 'index.php?cat=personal&sub_cat=person_infor&user=' . $_REQUEST['user']; ?>" method="post" enctype="multipart/form-data">
         <center>
             <h1>cập nhật ảnh bìa</h1>
             <input type="file" name="BGR">
-            <input type="submit" id="ok_bgr" value="cập nhật">
+            <input type="submit" id="ok_bgr" name="ok_bgr" value="cập nhật">
         </center>
     </form>
     <img src="Public/images/close.png" alt="" id="closeBGR">
 </div>
 <script>
     $(document).ready(function() {
-        document.getElementById('loadAVT').style.display = 'none'
-        document.getElementById('loadBGR').style.display = 'none'
-        document.getElementById('message').style.display = 'none'
+
         $('#hide').click(function() {
             if (document.getElementById('pass').type == 'password') {
                 document.getElementById('hide').src = 'Public/images/hide.png';

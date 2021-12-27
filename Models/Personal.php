@@ -124,7 +124,11 @@ class Personal extends Database
     {
         $sql = "update tblAccount set IMG ='" . $url . "';";
         if (mysqli_query($this->conn, $sql)) {
-            echo '<script> alert("cập nhật thành công");</script>';
+            echo '<script> 
+                $(document).ready(function(){
+                    document.getElementbyId("message").style.display = "block";
+                });
+            </script>';
         } else {
             echo mysqli_error($this->conn);
         }
@@ -133,7 +137,11 @@ class Personal extends Database
     {
         $sql = "update tblAccount set BGR ='" . $url . "';";
         if (mysqli_query($this->conn, $sql)) {
-            echo '<script> alert("cập nhật thành công");</script>';
+            echo '<script> 
+                $(document).ready(function(){
+                    document.getElementbyId("message").style.display = "block";
+                });
+            </script>';
         } else {
             echo mysqli_error($this->conn);
         }

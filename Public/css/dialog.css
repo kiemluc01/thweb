@@ -6,7 +6,7 @@
     width: 25%;
     border-radius: 10%/25%;
     background-image: linear-gradient(to left, rgb(219, 193, 105), rgb(135, 228, 98), rgb(26, 155, 101));
-    display: block;
+    display: none;
     position: absolute;
     top: 40vh;
     left: 45%;
@@ -20,7 +20,7 @@
     left: 30%;
     top: 25vh;
     background-image: linear-gradient(to bottom, rgb(142, 247, 224), rgb(138, 207, 253));
-    display: flex;
+    display: none;
     border-radius: 10px/10px;
 }
 
