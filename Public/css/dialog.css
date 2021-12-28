@@ -5,7 +5,7 @@
     height: 20vh;
     width: 25%;
     border-radius: 10%/25%;
-    background-image: linear-gradient(to left, rgb(219, 193, 105), rgb(135, 228, 98), rgb(26, 155, 101));
+    background-image: linear-gradient(to left, rgb(45, 135, 253), rgb(55, 192, 255), rgb(38, 252, 234));
     display: none;
     position: absolute;
     top: 40vh;
@@ -62,7 +62,7 @@ input.dialog {
     border-radius: 10px/10px;
     color: rgb(20, 4, 110);
     font-weight: bold;
-    background-image: linear-gradient(to left, rgb(170, 9, 9), rgb(206, 219, 24), rgb(10, 170, 71));
+    background-image: linear-gradient(to left, rgb(252, 2, 2), rgb(206, 219, 24), rgb(10, 170, 71));
 }
 
 img#closeAVT,
