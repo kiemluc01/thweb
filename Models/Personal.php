@@ -122,7 +122,7 @@ class Personal extends Database
     }
     function update_IMGAVT($url)
     {
-        $sql = "update tblAccount set IMG ='" . $url . "';";
+        $sql = "update tblAccount set IMG ='" . $url . "' where username ='" . $_REQUEST['user'] . "';";
         if (mysqli_query($this->conn, $sql)) {
             echo '<script> 
                 $(document).ready(function(){
@@ -135,7 +135,7 @@ class Personal extends Database
     }
     function update_IMGBGR($url)
     {
-        $sql = "update tblAccount set BGR ='" . $url . "';";
+        $sql = "update tblAccount set BGR ='" . $url . "' where username ='" . $_REQUEST['user'] . "';";
         if (mysqli_query($this->conn, $sql)) {
             echo '<script> 
                 $(document).ready(function(){

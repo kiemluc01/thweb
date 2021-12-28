@@ -6,6 +6,19 @@ input.finance {
     color: #FFF;
 }
 
+#finance>form {
+    display: flex;
+    justify-content: space-between;
+}
+
+#save,
+#spend {
+    background-color: cornsilk;
+    width: 49%;
+    height: 100%;
+    border-radius: 10px/10px;
+}
+
 h1.finance {
     font-family: roboto;
     font-weight: bold;
@@ -19,7 +32,7 @@ h1.finance {
 #current_finance {
     background-color: cornsilk;
     width: 25%;
-    height: 20vh;
+    height: 21vh;
     border-radius: 10px/10px;
     margin-left: 50px;
 }
@@ -30,14 +43,16 @@ tr.finance {
     line-height: 70px;
 }
 
-input#salary {
+input#salary,
+#save_money,
+#spend_money {
     height: 40px;
     width: 80%;
     border-radius: 10px/10px;
     color: #000!important;
 }
 
-input.finance {
+input#ok_finance {
     color: #000!important;
     border-radius: 10px/10px;
     height: 20%;
@@ -49,5 +64,13 @@ img#pen {
     width: 20px;
     height: 20px;
     left: 40%;
-    top: 48%;
+    top: 51%;
+}
+
+#output_value {
+    width: 50%;
+    height: 21vh;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5%;
 }

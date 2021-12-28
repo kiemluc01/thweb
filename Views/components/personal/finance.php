@@ -1,3 +1,11 @@
+<?php
+
+$salary = 0;
+if (isset($_REQUEST['salary']))
+    $salary = $_REQUEST['salary'];
+$save = number_format($salary * 0.1);
+$spend = number_format($salary * 0.9);
+?>
 <div class="menu_container">
     <div id="menu">
         <?php loadModule('menu'); ?>
@@ -9,14 +17,33 @@
                 <center>
                     <h3 class="finance">Mức lương tháng này</h3>
                     <div>
-                        <input type="text" class="finance" id="salary" disabled="true">
+                        <input type="text" class="finance" id="salary" name="salary" value="<?php echo $salary; ?>" disabled="true">
                         <img src="Public/images/pen.png" alt="sửa" id="pen">
                     </div>
-                    <input type="submit" class="finance" value="OK" style="margin-top:3%">
+                    <input type="submit" class="finance" value="OK" id="ok_finance" style="margin-top:3%">
                 </center>
             </div>
-            <div id="output_value"></div>
+            <div id="output_value">
+                <div id="save">
+                    <center>
+                        <h3 class="finance">Tiền tiết kiệm(10%)</h3>
+                        <div>
+                            <input type="text" class="finance" id="save_money" value="<?php echo $save . ' VNĐ'; ?>" disabled="true">
+                        </div>
+                    </center>
+                </div>
+                <div id="spend">
+                    <center>
+                        <h3 class="finance">Tiền chi tiêu(90%)</h3>
+                        <div>
+                            <input type="text" class="finance" id="spend_money" value="<?php echo $spend . ' VNĐ'; ?>" disabled="true">
+                        </div>
+                    </center>
+                </div>
+            </div>
+
         </form>
+        <input type="submit" value="Lưu" id="submit_save" name="submit_save">
     </div>
 
 </div>
@@ -41,7 +68,7 @@ $personal = loadModel('Personal');
             if (document.getElementById('salary').disabled == true) {
                 document.getElementById('salary').disabled = false
             }
-            document.getElementById('message').style.display = 'block';
+
         });
 
     })
