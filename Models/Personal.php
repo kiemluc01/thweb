@@ -113,37 +113,23 @@ class Personal extends Database
     }
     function update_infor($ten, $email, $ns, $gt, $pass)
     {
-        $sql = "update tblAccount set TenND =N'" . $ten . "',email='" . $email . "',NS='" . $ns . "',GT='" . $gt . "',pass='" . $pass . "' where username = '" . $_REQUEST['user'] . "';";
-        if (mysqli_query($this->conn, $sql)) {
-            echo "<script> document.getElementById('message').style.display = 'block';</script>";
-        } else {
+        $sql = "update tblAccount set TenND =N'" . $ten . "',email='" . $email . "',NS='" . $ns . "',GT='" . $gt . "',pass='" . $pass . "' where username = '" . $_SESSION['user'] . "';";
+        if (!(mysqli_query($this->conn, $sql))) {
             echo mysqli_error($this->conn);
         }
     }
     function update_IMGAVT($url)
     {
-        $sql = "update tblAccount set IMG ='" . $url . "' where username ='" . $_REQUEST['user'] . "';";
-        if (mysqli_query($this->conn, $sql)) {
-            echo '<script> 
-                $(document).ready(function(){
-                    document.getElementbyId("message").style.display = "block";
-                });
-            </script>';
-        } else {
+        $sql = "update tblAccount set IMG ='" . $url . "' where username ='" . $_SESSION['user'] . "';";
+        if (!(mysqli_query($this->conn, $sql))) {
             echo mysqli_error($this->conn);
         }
     }
     function update_IMGBGR($url)
     {
-        $sql = "update tblAccount set BGR ='" . $url . "' where username ='" . $_REQUEST['user'] . "';";
-        if (mysqli_query($this->conn, $sql)) {
-            echo '<script> 
-                $(document).ready(function(){
-                    document.getElementbyId("message").style.display = "block";
-                });
-            </script>';
-        } else {
+        $sql = "update tblAccount set BGR ='" . $url . "' where username ='" . $_SESSION['user'] . "';";
+        if (!(mysqli_query($this->conn, $sql))) {
             echo mysqli_error($this->conn);
-        }
+        } 
     }
 }

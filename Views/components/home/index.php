@@ -1,13 +1,14 @@
 <?php
-
+$_SESSION['user'] = null;
 if (isset($_REQUEST['login'])) {
     if (!(isset($_REQUEST['username_login']) && isset($_REQUEST['password'])))
         echo '<script> alert("không được bỏ trống các mục") </script>';
     else {
         $login = loadModel('Login');
         if ($login->login($_REQUEST['username_login'], $_REQUEST['password'])) {
+            $_SESSION['user'] = $_REQUEST['username_login'];
             echo '<script> alert("Đăng nhập thành công") 
-                location="index.php?cat=personal&user=' . $_REQUEST['username_login'] . '";
+                location="index.php?cat=personal";
             </script>';
         } else
             echo '<script> alert("Sai tài khoản hoặc mật khẩu") </script>';
