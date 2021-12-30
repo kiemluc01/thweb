@@ -71,3 +71,25 @@ img#closeAVT,
     width: 30px;
     border-radius: 50%/50%;
 }
+
+#closezoom {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%/50%;
+}
+
+#IMG_zoom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#zoom {
+    height: 100vh;
+    width: auto;
+}

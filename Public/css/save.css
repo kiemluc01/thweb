@@ -1,0 +1,38 @@
+#heo {
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top: 25vh;
+    left: 35%;
+}
+
+#heo_tmp {
+    width: 10%;
+    height: auto;
+    position: absolute;
+    top: 20vh;
+    left: 85%;
+}
+
+#tay {
+    width: 5%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    animation-name: tay;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#tien {
+    font-size: 0px;
+    font-family: roboto;
+    font-weight: bold;
+    color: #fbff23;
+    text-shadow: 0.05em 0.05em rgb(173, 173, 173);
+    /* display: none; */
+    position: absolute;
+    top: 35%;
+    left: 45%;
+}

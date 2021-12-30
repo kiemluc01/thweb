@@ -26,6 +26,10 @@ if (isset($_REQUEST['ok_finance'])) {
     <div id="finance">
         <h1 class="finance">Tài chính</h1>
         <form action="" method="post">
+            <select name="month" id="month">
+                <option value="<?php echo getdate()['mon']; ?>"><?php echo 'Tháng ' . getdate()['mon'] - 1; ?></option>
+                <option value="<?php echo getdate()['mon'] - 1; ?>"><?php echo 'Tháng ' . getdate()['mon']; ?></option>
+            </select>
             <div>
                 <div id="current_finance">
                     <center>
@@ -78,16 +82,3 @@ $personal = loadModel('Personal');
         <input type="submit" value="OK" id="ok_message" class="dialog">
     </center>
 </div>
-<script>
-    $(document).ready(function() {
-        $('#pen').click(function() {
-            if (document.getElementById('salary').disabled == true) {
-                document.getElementById('salary').disabled = false
-                document.getElementById('ok_finance').disabled = false
-            }
-        });
-        $('#ok_message').click(function() {
-            document.getElementById('message').style.display = 'none';
-        })
-    })
-</script>

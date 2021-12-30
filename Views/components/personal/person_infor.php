@@ -48,7 +48,7 @@ if (isset($_REQUEST['ok_bgr'])) {
         <div id="BGR" style="background-color: rgb(163, 163, 163);">
             <div style=" width:70%; height:100%;margin-left:15%">
                 <img src="Public/images/camera.jpg" alt="" id="camera_BGR" class="camera">
-                <img src="<?php $person->loadBGR($_SESSION['user']); ?>" alt="" style="width:100%; height:100%">
+                <img src="<?php $person->loadBGR($_SESSION['user']); ?>" alt="" id="BGRR" style="width:100%; height:100%">
 
             </div>
 
@@ -105,7 +105,7 @@ if (isset($_REQUEST['ok_bgr'])) {
 <div id="message">
     <center>
         <h3>cập nhật thành công</h3><br>
-        <input type="submit" value="OK" id="ok" class="dialog">
+        <input type="submit" value="OK" id="ok_message" class="dialog">
     </center>
 </div>
 <div id="loadAVT">
@@ -128,43 +128,19 @@ if (isset($_REQUEST['ok_bgr'])) {
     </form>
     <img src="Public/images/close.png" alt="" id="closeBGR">
 </div>
+<div id="IMG_zoom">
+    <div style="width:90%;">
+        <center>
+            <img src="<?php $person->loadIMG($_SESSION['user']); ?>" alt="" id="zoom">
+        </center>
+    </div>
+    <img src="Public/images/close.png" id="closezoom" alt="">
+</div>
+<img src="Public/images/BGR_person.jpg" alt="" id="tmpBGR" style="display: none;">
+<img src="Public/images/AVT_person.jpg" alt="" id="tmpAVT" style="display: none;">
 <script>
     $(document).ready(function() {
 
-        $('#hide').click(function() {
-            if (document.getElementById('pass').type == 'password') {
-                document.getElementById('hide').src = 'Public/images/hide.png';
-                document.getElementById('pass').type = 'text';
-            } else {
-                document.getElementById('hide').src = 'Public/images/show.png';
-                document.getElementById('pass').type = 'password';
-            }
-        });
-        $('#ok').click(function() {
-            document.getElementById('message').style.display = 'none'
-        })
-        // camera_AVT
-        $('#closeAVT').click(function() {
-            document.getElementById('loadAVT').style.display = 'none'
-        })
-        $('#camera_AVT').click(function() {
-            document.getElementById('loadAVT').style.display = 'flex'
-        })
-        $('#closeBGR').click(function() {
-            document.getElementById('loadBGR').style.display = 'none'
-        })
-        $('#camera_BGR').click(function() {
-            document.getElementById('loadBGR').style.display = 'flex'
-        })
-        document.getElementById('AVT').onchange = function(e) {
-            loadImage(
-                e.target.files[0],
-                function(img) {
-                    document.body.appendChild(img);
-                }, {
-                    maxWidth: 600
-                } // Options
-            );
-        };
+
     })
 </script>

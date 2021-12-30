@@ -66,17 +66,3 @@ if (isset($_REQUEST['login'])) {
 
     </div>
 </div>
-<script>
-    $(document).ready(function() {
-        $('#hide').click(function() {
-
-            if (document.getElementById('password').type == 'password') {
-                document.getElementById('hide').src = 'Public/images/hide.png';
-                document.getElementById('password').type = 'text';
-            } else {
-                document.getElementById('hide').src = 'Public/images/show.png';
-                document.getElementById('password').type = 'password';
-            }
-        });
-    })
-</script>

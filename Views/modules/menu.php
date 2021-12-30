@@ -8,6 +8,5 @@
             <li class="menu_bar"><a href="index.php?cat=personal&sub_cat=entertain">Nhu cầu giải trí(20%)</a></li>
         </ul>
     </li>
-    <li class="menu_bar"><a href="index.php?cat=personal&sub_cat=working">Ngày đi làm</a></li>
     <li class="menu_bar"><a href="index.php">Đăng xuất</a></li>
 </ul>

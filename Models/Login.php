@@ -22,7 +22,7 @@ class Login extends Database
         if ($user->num_rows > 0)
             echo '<p id="error" >tên đăng nhập đã tồn tại</p>';
         else {
-            $sql = "insert into tblAccount value(null,null,'" . $email . "',null,null,'" . $username . "','" . $password . "');";
+            $sql = "insert into tblAccount value(null,null,'" . $email . "',null,null,'" . $username . "','" . $password . "',DEFAULT,DEFAULT);";
             echo $sql;
             if (mysqli_query($this->conn, $sql)) {
                 echo '<script> alert("đăng kí thành công")

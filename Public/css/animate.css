@@ -437,3 +437,217 @@
      animation-iteration-count: 1;
      animation-fill-mode: forwards;
  }
+ /* heo */
+ 
+ @keyframes tay {
+     0% {
+         top: 0%;
+         left: 20%;
+         content: url('../images/tay.png');
+     }
+     80% {
+         top: 45%;
+         left: 50%;
+         content: url('../images/tay.png');
+     }
+     90% {
+         top: 44%;
+         left: 50%;
+         content: url('../images/tay_click.png');
+     }
+     100% {
+         top: 45%;
+         left: 50%;
+         content: url('../images/tay.png');
+     }
+ }
+ 
+ @keyframes heo_start {
+     0% {
+         transform: rotate(10deg);
+         content: url('../images/heo.png');
+     }
+     5% {
+         transform: rotate(-10deg);
+         content: url('../images/heo.png');
+     }
+     10% {
+         transform: rotate(10deg);
+         content: url('../images/heo.png');
+     }
+     15% {
+         transform: rotate(-10deg);
+         content: url('../images/heo.png');
+     }
+     20% {
+         transform: rotate(10deg);
+         content: url('../images/heo.png');
+     }
+     25% {
+         transform: rotate(-10deg);
+         content: url('../images/heo.png');
+     }
+     30% {
+         transform: rotate(10deg);
+         content: url('../images/heo.png');
+     }
+     35% {
+         transform: rotate(-10deg);
+         content: url('../images/heo.png');
+     }
+     40% {
+         transform: rotate(10deg);
+         content: url('../images/heo.png');
+     }
+     45% {
+         transform: rotate(-10deg);
+         content: url('../images/heo.png');
+     }
+     50% {
+         transform: rotate(10deg);
+         content: url('../images/heo.png');
+     }
+     55% {
+         transform: rotate(-10deg);
+         content: url('../images/heo.png');
+     }
+     60% {
+         transform: rotate(0deg);
+         content: url('../images/dap_heo.png');
+     }
+     100% {
+         transform: rotate(0deg);
+         content: url('../images/dap_heo.png');
+     }
+ }
+ 
+ .heo_click {
+     animation-name: heo_start;
+     animation-duration: 1.5s;
+     animation-iteration-count: 1;
+     animation-fill-mode: forwards;
+ }
+ 
+ @keyframes ttien {
+     24% {
+         font-size: 0px;
+         font-family: roboto;
+         font-weight: bold;
+         color: #FFD700;
+         text-shadow: 0.05em 0.05em rgb(173, 173, 173);
+         /* display: none; */
+         position: absolute;
+         top: 35%;
+         left: 45%;
+     }
+     25% {
+         font-size: 10px;
+         font-family: roboto;
+         font-weight: bold;
+         color: #FFD700;
+         text-shadow: 0.05em 0.05em rgb(173, 173, 173);
+         display: block;
+         position: absolute;
+         top: 35%;
+         left: 45%;
+     }
+     100% {
+         font-size: 60px;
+         font-family: roboto;
+         font-weight: bold;
+         color: #FFD700;
+         text-shadow: 0.05em 0.05em rgb(173, 173, 173);
+         display: block;
+         position: absolute;
+         top: 25%;
+         left: 35%;
+     }
+ }
+ 
+ .tien {
+     animation-name: ttien;
+     animation-duration: 3s;
+     animation-iteration-count: 1;
+     animation-fill-mode: forwards;
+ }
+ 
+ @keyframes changes_tmp {
+     0% {
+         width: 10%;
+         height: auto;
+         position: absolute;
+         top: 20vh;
+         left: 85%;
+     }
+     99.99% {
+         width: 30%;
+         height: auto;
+         position: absolute;
+         top: 25vh;
+         left: 35%;
+     }
+     100% {
+         width: 10%;
+         height: auto;
+         position: absolute;
+         top: 20vh;
+         left: 85%;
+     }
+ }
+ 
+ @keyframes changes {
+     0% {
+         width: 30%;
+         height: auto;
+         content: url('../images/dap_heo.png');
+         position: absolute;
+         top: 25vh;
+         left: 35%;
+     }
+     80% {
+         width: 0%;
+         content: url('../images/dap_heo.png');
+         height: auto;
+         position: absolute;
+         top: 90vh;
+         left: 20%;
+     }
+     81% {
+         width: 0%;
+         content: url('../images/heo.png');
+         height: auto;
+         position: absolute;
+         top: 20vh;
+         left: 100%;
+     }
+     99.99% {
+         content: url('../images/heo.png');
+         width: 10%;
+         height: auto;
+         position: absolute;
+         top: 20vh;
+         left: 85%;
+     }
+     100% {
+         content: url('../images/heo.png');
+         width: 30%;
+         height: auto;
+         position: absolute;
+         top: 25vh;
+         left: 35%;
+     }
+ }
+ 
+ .changes_tmp {
+     animation-name: changes_tmp;
+     animation-duration: 3s;
+     animation-iteration-count: 1;
+     animation-fill-mode: forwards;
+ }
+ 
+ .changes {
+     animation-name: changes;
+     animation-duration: 3s;
+     animation-iteration-count: 1;
+     animation-fill-mode: forwards;
+ }
