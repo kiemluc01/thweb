@@ -1,0 +1,60 @@
+#add_spend {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background-color: #FFF;
+    border-radius: 10px/10px;
+    font-family: roboto;
+}
+
+#table_spend {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    height: 68%;
+    width: 49%;
+    background-color: #FFF;
+    border-radius: 10px/10px;
+    overflow: auto;
+    font-family: roboto;
+}
+
+#table_spend table {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#table_spend table,
+#table_spend tr,
+#table_spend th,
+#table_spend td {
+    border: 1px solid;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th#STT {
+    width: 20px;
+}
+
+th#Loai {
+    width: 100px;
+}
+
+th#content {
+    width: 250px;
+}
+
+th#ngay {
+    width: 100px;
+}
+
+th#tong {
+    width: 150px;
+}
+
+h1#title_add_spend {
+    font-family: roboto;
+    color: #FFF;
+    margin-top: 8%;
+}

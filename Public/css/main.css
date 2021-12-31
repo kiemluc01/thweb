@@ -1,10 +1,15 @@
 #banner,
 #finance,
-#entertain,
-#living,
+#spending,
 #working,
 #saving {
     width: 80%;
     height: 100vh;
     background-image: url('../images/background.jpg');
+}
+
+#frame {
+    width: 80%;
+    height: 80%;
+    border: 1px black;
 }

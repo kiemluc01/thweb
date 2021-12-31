@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="Public/css/main.css">
     <link rel="stylesheet" href="Public/css/dialog.css">
     <link rel="stylesheet" href="Public/css/save.css">
+    <link rel="stylesheet" href="Public/css/spend.css">
     <script src="js/load-image.all.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
