@@ -5,7 +5,7 @@ class Spend extends Database
     {
         $person = loadModel('Personal');
         $idND = $person->loadId();
-        $sql = "select * from tblspend where idND =" . $idND;
+        $sql = "select * from tblspend where idND =" . $idND . " order by ngaymua desc";
         $result = mysqli_query($this->conn, $sql);
         return  $result;
     }

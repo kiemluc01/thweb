@@ -48,6 +48,9 @@ if (isset($_REQUEST['money_spend']) && isset($_REQUEST['content_spend'])) {
             </form>
         </div>
         <div id="table_spend">
+            <select name="" id="month_spend">
+                <option value="Tất cả" selected>Tất cả</option>
+            </select>
             <table id="content_table_spend">
                 <tr>
                     <th id="STT">STT</th>
@@ -69,7 +72,7 @@ if (isset($_REQUEST['money_spend']) && isset($_REQUEST['content_spend'])) {
                         <td><?php echo $row['Loai']; ?></td>
                         <td><?php echo $row['noidung']; ?></td>
                         <td><?php echo $row['ngaymua']; ?></td>
-                        <td><?php echo $row['tongtien']; ?></td>
+                        <td><?php echo number_format($row['tongtien']); ?> VNĐ</td>
                     </tr>
                 <?php $i++;
                         }

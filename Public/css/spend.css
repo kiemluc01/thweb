@@ -5,6 +5,7 @@
     background-color: #FFF;
     border-radius: 10px/10px;
     font-family: roboto;
+    font-size: 20px;
 }
 
 #table_spend {
@@ -22,6 +23,7 @@
 #table_spend table {
     margin-top: 5px;
     margin-left: 5px;
+    font-size: 18px;
 }
 
 #table_spend table,
@@ -57,4 +59,13 @@ h1#title_add_spend {
     font-family: roboto;
     color: #FFF;
     margin-top: 8%;
+}
+
+#month_spend {
+    margin-left: 85%;
+    height: 30px;
+    border-radius: 10px/10px;
+    font-family: roboto;
+    font-size: 20px;
+    margin-top: 5px;
 }
