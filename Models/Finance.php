@@ -27,6 +27,18 @@ class Finance extends Database
                 $save = $row['save'];
         return $save;
     }
+    function loadBalance()
+    {
+        $balance = 0;
+        $person = loadModel('Personal');
+        $idND = $person->loadId();
+        $sql = "select * from tblmoney where idND = " . $idND;
+        $_result = mysqli_query($this->conn, $sql);
+        if ($_result->num_rows > 0)
+            while ($row = $_result->fetch_assoc())
+                $balance = $row['balance'];
+        return $balance;
+    }
     function loadMonth()
     {
         $person = loadModel('Personal');
@@ -67,5 +79,14 @@ class Finance extends Database
         $sql = "select * from finance ";
         $_result = mysqli_query($this->conn, $sql);
         return $_result;
+    }
+    function updateMoney($save, $spend)
+    {
+        $person = loadModel('Personal');
+        $idND = $person->loadId();
+        $sql = "update tblmoney set save = save + " . $save . ",balance = balance +" . $spend . " where idND = " . $idND;
+        if (!mysqli_query($this->conn, $sql)) {
+            echo mysqli_error($this->conn);
+        }
     }
 }

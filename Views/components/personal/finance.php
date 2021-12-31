@@ -2,6 +2,7 @@
 $Finance = loadModel('Finance');
 $Thang = getdate()['mon'];
 $Nam = getdate()['year'];
+$sodu = $Finance->loadBalance();
 if (getdate()['mday'] < substr(date('m-t-Y'), 3, 2)) {
     if ($Thang == 1) {
         $Nam--;
@@ -13,8 +14,9 @@ if (getdate()['mday'] < substr(date('m-t-Y'), 3, 2)) {
 }
 if (isset($_REQUEST['month'])) {
     $value = $_REQUEST['month'];
-    $Thang = substr($value, 0, strlen($value) - 5);
-    $Nam = substr($value, strlen($value) - 5, strlen($value) - 1);
+    $_SESSION['ngay'] = $_REQUEST['month'];
+    $Thang = substr($value, 0, strlen($value) - 4);
+    $Nam = substr($value, strlen($value) - 4, strlen($value) - 1);
 }
 $salary = $Finance->loadSalary($Thang, $Nam);
 if (isset($_REQUEST['salary'])) {
@@ -26,6 +28,7 @@ $save = $salary * 0.1;
 $spend = $salary * 0.9;
 if (isset($_REQUEST['ok_finance'])) {
     $Finance->add($Thang, $Nam, $salary);
+    $sodu = $Finance->loadBalance();
     echo "<script>
         $(document).ready(function(){
             document.getElementById('message').style.display ='block';
@@ -34,25 +37,32 @@ if (isset($_REQUEST['ok_finance'])) {
 }
 
 ?>
+
 <div class="menu_container">
     <div id="menu">
         <?php loadModule('menu'); ?>
     </div>
     <div id="finance">
+        <h4 class="finance">Số dư hiện tại: <?php echo number_format($sodu) . ' VNĐ'; ?></h4>
         <h1 class="finance">Tài chính</h1>
         <form action="" method="post">
             <select name="month" id="month">
                 <?php
                 $result = $Finance->loadMonth();
                 while ($row = $result->fetch_assoc()) {
-                    echo '<option value="' . $row['Thang'] . $row['Nam'] . '">' . $row['Thang'] . '/' . $row['Nam'] . '</option>';
+                    $val = $row['Thang'] . $row['Nam'];
+                    if ($val == $_SESSION['ngay'])
+                        echo '<option value="' . $row['Thang'] . $row['Nam'] . ' selected">' . $row['Thang'] . '/' . $row['Nam'] . '</option>';
+                    else
+                        echo '<option value="' . $row['Thang'] . $row['Nam'] . '">' . $row['Thang'] . '/' . $row['Nam'] . '</option>';
                 }
+                $_SESSION['ngay'] = '';
                 ?>
             </select>
             <div>
                 <div id="current_finance">
                     <center>
-                        <h3 class="finance">Mức lương tháng <?php echo $Thang; ?> (VNĐ)</h3>
+                        <h3 class="finance" id="title_salary">Mức lương tháng <?php echo $Thang; ?> (VNĐ)</h3>
                         <div>
                             <input type="text" class="finance" id="salary" name="salary" value="<?php echo number_format($salary, 0, '.', " "); ?>" disabled="true">
                             <img src="Public/images/pen.png" alt="sửa" id="pen">
@@ -85,6 +95,7 @@ if (isset($_REQUEST['ok_finance'])) {
     </div>
 
 </div>
+
 <?php
 $personal = loadModel('Personal');
 ?>
@@ -100,3 +111,4 @@ $personal = loadModel('Personal');
         <input type="submit" value="OK" id="ok_message" class="dialog">
     </center>
 </div>
+<input type="text" name="session" id="session" value="<?php echo $personal->loadId(); ?>" style="display:none">

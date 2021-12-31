@@ -67,4 +67,5 @@ $(document).ready(function() {
             document.getElementById('password').type = 'password';
         }
     });
+
 })

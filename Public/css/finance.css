@@ -97,3 +97,12 @@ img#pen {
     top: 25%;
     left: 25%;
 }
+
+h4.finance {
+    position: absolute;
+    right: 2%;
+    top: 15%;
+    color: #FFF;
+    font-size: 22px;
+    font-family: roboto;
+}

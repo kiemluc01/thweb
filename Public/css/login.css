@@ -54,6 +54,7 @@ p#error {
 
 input#username_login,
 input#password,
+input#password_login,
 input#Cpassword,
 input#email {
     height: 30px;

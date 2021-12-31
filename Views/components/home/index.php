@@ -34,13 +34,14 @@ if (isset($_REQUEST['login'])) {
                         <td class="login">Tên đăng nhập: </td>
                         <td class="login">
                             <input type="text" id="username_login" name="username_login">
-                            <img src="Public/images/show.png" alt="" id="hide" style="width:30px;height:20px; position:absolute;top: 40.5vh;left:60.3%;">
+
                         </td>
                     </tr>
                     <tr class="login">
                         <td class="login">Mật khẩu: </td>
                         <td class="login">
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password_login">
+                            <img src="Public/images/show.png" alt="" id="hide_login" style="width:30px;height:20px; position:absolute;top: 40.5vh;left:60.3%;">
                         </td>
                     </tr>
                     <tr class="login">
@@ -66,3 +67,16 @@ if (isset($_REQUEST['login'])) {
 
     </div>
 </div>
+<script>
+    $(document).ready(function() {
+        $('#hide_login').click(function() {
+            if (document.getElementById('password_login').type == 'password') {
+                document.getElementById('hide_login').src = 'Public/images/hide.png';
+                document.getElementById('password_login').type = 'text';
+            } else {
+                document.getElementById('hide_login').src = 'Public/images/show.png';
+                document.getElementById('password_login').type = 'password';
+            }
+        });
+    })
+</script>
