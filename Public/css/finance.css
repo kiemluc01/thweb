@@ -86,3 +86,14 @@ img#pen {
     justify-content: space-between;
     margin-right: 5%;
 }
+
+#month {
+    height: 6%;
+    width: auto;
+    color: #000;
+    font-family: roboto;
+    font-size: 25px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}

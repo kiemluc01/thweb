@@ -1,16 +1,30 @@
 <?php
+$Finance = loadModel('Finance');
 $Thang = getdate()['mon'];
+$Nam = getdate()['year'];
 if (getdate()['mday'] < substr(date('m-t-Y'), 3, 2)) {
-    $Thang--;
+    if ($Thang == 1) {
+        $Nam--;
+        $Thang = 12;
+    } else
+        $Thang--;
+} else {
+    $Finance->autoAdd();
 }
-$salary = 0;
-if (isset($_REQUEST['salary']))
-    $salary = $_REQUEST['salary'];
+if (isset($_REQUEST['month'])) {
+    $value = $_REQUEST['month'];
+    $Thang = substr($value, 0, strlen($value) - 5);
+    $Nam = substr($value, strlen($value) - 5, strlen($value) - 1);
+}
+$salary = $Finance->loadSalary($Thang, $Nam);
+if (isset($_REQUEST['salary'])) {
+
+    $salary = str_replace(' ', '', $_REQUEST['salary']);
+}
+
 $save = $salary * 0.1;
 $spend = $salary * 0.9;
 if (isset($_REQUEST['ok_finance'])) {
-    $Finance = loadModel('Finance');
-    $Nam = getdate()['year'];
     $Finance->add($Thang, $Nam, $salary);
     echo "<script>
         $(document).ready(function(){
@@ -18,6 +32,7 @@ if (isset($_REQUEST['ok_finance'])) {
         });
     </script>";
 }
+
 ?>
 <div class="menu_container">
     <div id="menu">
@@ -27,15 +42,19 @@ if (isset($_REQUEST['ok_finance'])) {
         <h1 class="finance">Tài chính</h1>
         <form action="" method="post">
             <select name="month" id="month">
-                <option value="<?php echo getdate()['mon']; ?>"><?php echo 'Tháng ' . getdate()['mon'] - 1; ?></option>
-                <option value="<?php echo getdate()['mon'] - 1; ?>"><?php echo 'Tháng ' . getdate()['mon']; ?></option>
+                <?php
+                $result = $Finance->loadMonth();
+                while ($row = $result->fetch_assoc()) {
+                    echo '<option value="' . $row['Thang'] . $row['Nam'] . '">' . $row['Thang'] . '/' . $row['Nam'] . '</option>';
+                }
+                ?>
             </select>
             <div>
                 <div id="current_finance">
                     <center>
-                        <h3 class="finance">Mức lương tháng <?php echo $Thang; ?></h3>
+                        <h3 class="finance">Mức lương tháng <?php echo $Thang; ?> (VNĐ)</h3>
                         <div>
-                            <input type="text" class="finance" id="salary" name="salary" value="<?php echo $salary; ?>" disabled="true">
+                            <input type="text" class="finance" id="salary" name="salary" value="<?php echo number_format($salary, 0, '.', " "); ?>" disabled="true">
                             <img src="Public/images/pen.png" alt="sửa" id="pen">
                         </div>
                         <input type="submit" class="finance" value="Lưu" id="ok_finance" name="ok_finance" style="margin-top:3%" disabled>
@@ -44,17 +63,17 @@ if (isset($_REQUEST['ok_finance'])) {
                 <div id="output_value">
                     <div id="save">
                         <center>
-                            <h3 class="finance">Tiền tiết kiệm(10%)</h3>
+                            <h3 class="finance">Tiền tiết kiệm (VNĐ)</h3>
                             <div>
-                                <input type="text" class="finance" id="save_money" value="<?php echo number_format($save) . ' VNĐ'; ?>" disabled="true">
+                                <input type="text" class="finance" id="save_money" value="<?php echo number_format($save, 0, '.', " "); ?>" disabled="true">
                             </div>
                         </center>
                     </div>
                     <div id="spend">
                         <center>
-                            <h3 class="finance">Tiền chi tiêu(90%)</h3>
+                            <h3 class="finance">Tiền chi tiêu (VNĐ)</h3>
                             <div>
-                                <input type="text" class="finance" id="spend_money" value="<?php echo number_format($spend) . ' VNĐ'; ?>" disabled="true">
+                                <input type="text" class="finance" id="spend_money" value="<?php echo number_format($spend, 0, '.', " "); ?>" disabled="true">
                             </div>
                         </center>
                     </div>
@@ -63,7 +82,6 @@ if (isset($_REQUEST['ok_finance'])) {
             </div>
 
         </form>
-
     </div>
 
 </div>

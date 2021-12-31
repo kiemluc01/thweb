@@ -132,4 +132,14 @@ class Personal extends Database
             echo mysqli_error($this->conn);
         } 
     }
+    function loadId()
+    {
+        $sqlselectID = "select * from tblAccount where username ='" . $_SESSION['user'] . "'";
+        $idND = '';
+        $_result = mysqli_query($this->conn, $sqlselectID);
+        while ($row = $_result->fetch_assoc()) {
+            $idND = $row['id'];
+        }
+        return $idND;
+    }
 }
