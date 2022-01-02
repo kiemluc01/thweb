@@ -1,5 +1,5 @@
 <?php
-$_SESSION['user'] = null;
+
 if (isset($_REQUEST['login'])) {
     if (!(isset($_REQUEST['username_login']) && isset($_REQUEST['password'])))
         echo '<script> alert("không được bỏ trống các mục") </script>';
@@ -13,7 +13,8 @@ if (isset($_REQUEST['login'])) {
         } else
             echo '<script> alert("Sai tài khoản hoặc mật khẩu") </script>';
     }
-}
+} else
+session_destroy();
 ?>
 <div id="login_container">
     <div class="banner_left">

@@ -48,8 +48,20 @@ if (isset($_REQUEST['money_spend']) && isset($_REQUEST['content_spend'])) {
             </form>
         </div>
         <div id="table_spend">
-            <select name="" id="month_spend">
+            <select name="month_spend" id="month_spend">
                 <option value="Tất cả" selected>Tất cả</option>
+                <?php
+                $Spend = loadModel('Spend');
+                $result = $Spend->getNgay();
+                if ($result->num_rows > 0) {
+                    $thang = array();
+                    while ($row = $result->fetch_assoc()) {
+                ?>
+                        <option value="<?php echo substr($row['ngaymua'], 0, 7); ?>"><?php echo substr($row['ngaymua'], 0, 7); ?></option>
+                <?php
+                    }
+                }
+                ?>
             </select>
             <table id="content_table_spend">
                 <tr>
@@ -60,7 +72,7 @@ if (isset($_REQUEST['money_spend']) && isset($_REQUEST['content_spend'])) {
                     <th id="tong">Tổng tiền</th>
                 </tr>
                 <?php
-                $Spend = loadModel('Spend');
+
                 $result = $Spend->getData();
                 $i = 1;
                 if ($result->num_rows > 0)
@@ -104,3 +116,4 @@ $personal = loadModel('Personal');
     </a>
     <h3><?php $personal->loadName($_SESSION['user']); ?></h3>
 </div>
+<input type="text" name="session" id="session" value="<?php echo $personal->loadId(); ?>" style="display:none">

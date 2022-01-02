@@ -39,5 +39,34 @@ $(document).ready(function() {
             }
         })
     })
+    $('#month_spend').change(function() {
+        var select = document.getElementById('month_spend')
+        var text = select.value
+        var session = document.getElementById('session')
+        var idND = session.value
+        $.ajax({
+            url: "Models/spend_json_data.php",
+            dataType: 'json',
+            success: function(data) {
+                var str = '<table id="content_table_spend"><tr> <th id="STT">STT</th> <th id="Loai">Loại chi tiêu</th><th id="content">Nội dung</th><th id="ngay">Ngày mua</th><th id="tong">Tổng tiền</th></tr>'
 
+                var tien = 0;
+                for (i = 0; i < data.length; i++) {
+                    var spend = data[i]
+                    var ngay = spend['ngaymua'].substr(0, 7)
+                    if (ngay == text) {
+                        if (idND == spend['idND']) {
+                            str = str + "<tr><td>" + (i + 1) + "</td><td>" + spend['Loai'] + "</td><td>" + spend['noidung'] + "</td><td>" + spend['ngaymua'] + "</td><td>" + spend['tongtien'] + " VNĐ</td></tr>"
+                            tien += Number(spend['tongtien'])
+                        }
+                    }
+                }
+                str = str + '<tr><td colspan="3">Tổng tiền</td><td colspan="2">' + tien + ' VNĐ</td></tr></table>'
+                    // $('#content_table_spend').remove()
+                document.getElementById('content_table_spend').style.display = 'none'
+                document.getElementById('table_spend').innerHTML = str
+
+            }
+        })
+    })
 })

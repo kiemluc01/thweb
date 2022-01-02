@@ -26,4 +26,12 @@ class Spend extends Database
             mysqli_error($this->conn);
         }
     }
+    function getNgay()
+    {
+        $person = loadModel('Personal');
+        $idND = $person->loadId();
+        $sql = "select distinct ngaymua from tblspend where idND = " . $idND . " order by ngaymua desc";
+        $result = mysqli_query($this->conn, $sql);
+        return $result;
+    }
 }
